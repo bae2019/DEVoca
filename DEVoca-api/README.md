@@ -31,41 +31,52 @@ $ ./gradlew bootRun
 
 ```bash
 DEVoca-api
+├─gradle
+│  └─wrapper
 ├─resources
 │  └─sql        # DB 초기화, 샘플 데이터 생성 등에 사용되는 SQL 파일
 └─src
-    ├─main
-    │  ├─generated
-    │  ├─java
-    │  │  └─com
-    │  │      └─ssafy
-    │  │          └─devoca
-    │  │              ├─board
-    │  │              │  ├─controller
-    │  │              │  ├─model
-    │  │              │  │  └─mapper
-    │  │              │  └─service
-    │  │              ├─card
-    │  │              │  ├─controller
-    │  │              │  ├─model
-    │  │              │  │  └─mapper
-    │  │              │  └─service
-    │  │              ├─config
-    │  │              └─word
-    │  │                  ├─controller
-    │  │                  ├─model
-    │  │                  │  └─mapper
-    │  │                  └─service
-    │  └─resources
-    │      ├─mapper
-    │      │  ├─board
-    │      │  └─card
-    │      └─mapper.word
-    └─test
-        └─java
-            └─com
-                └─ssafy
-                    └─devoca
+   └─main
+     ├─java
+     │  └─com
+     │      └─ssafy
+     │          └─devoca
+     │              ├─board
+     │              │  ├─controller
+     │              │  ├─model
+     │              │  │  └─mapper
+     │              │  └─service
+     │              ├─card -...       # board와 구조 동일
+     │              ├─comment -...
+     │              ├─dm -...
+     │              ├─mypage -...
+     │              ├─quiz -...
+     │              ├─search -...
+     │              ├─user -...
+     │              ├─word -...
+     │              ├─vocalist -...
+     │              ├─notify
+     │              │  ├─controller
+     │              │  ├─model
+     │              │  │  └─mapper
+     │              │  ├─repo
+     │              │  └─service
+     │              ├─config
+     │              └─util
+     │                 └─controller
+     └─resources
+         └─mapper
+             ├─board
+             ├─card
+             ├─comment
+             ├─dm
+             ├─mypage
+             ├─notify
+             ├─quiz
+             ├─search
+             ├─user
+             ├─vocalist
+             └─word
 ```
 
 ## Contributors
